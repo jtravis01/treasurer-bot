@@ -35,7 +35,6 @@ would be retried next time.
 """
 
 import json
-import sys
 import time
 
 import openpyxl
