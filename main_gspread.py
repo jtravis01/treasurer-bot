@@ -45,7 +45,7 @@ from neonize.events import ConnectedEv
 from neonize.proto.waCompanionReg.WAWebProtobufsCompanionReg_pb2 import DeviceProps
 from neonize.utils import build_jid
 
-CONFIG_PATH = "config.json"
+CONFIG_PATH = "test-config.json"
 
 
 def load_config(path: str = CONFIG_PATH) -> dict:
@@ -113,49 +113,56 @@ def get_targets(ws, name_col, paid_col, notified_col, max_notifications):
 def main():
     config = load_config()
 
+    # get columns from sheet
     name_col = config["nameColumnIndex"]
     paid_col = config["paidColumnIndex"]
     notified_col = config.get("notifiedColumnIndex")
     max_notifications = config.get("maxNotifications")  # None = no cap
 
+    # open spreadsheet and get all people who haven't paid and must be notified
     ws = open_worksheet(config)
     targets = get_targets(ws, name_col, paid_col, notified_col, max_notifications)
 
+    # if nobody needs to be notified
     if not targets:
         print("Nobody to notify (everyone is either paid or has hit maxNotifications).")
         return
 
+    # get relevant config data
     phone_book = config.get("phoneBook", {})
-    message_template = config.get(
-        "message",
-        "Hi {name}, just a reminder that your payment is still outstanding.",
-    )
+    message_template = config.get("message")
     delay = config.get("sendDelaySeconds", 2)
 
+    # get numbers of everyone who needs to pay (in targets list)
     missing = [name for _, name, _ in targets if name not in phone_book]
     if missing:
         print("WARNING: no phone number in phoneBook for:", ", ".join(missing))
         print("These people will NOT be messaged until you add their number.\n")
 
+    # add names, numbers to list of people to be messaged
     to_message = [
         (row_idx, name, phone_book[name], count)
         for row_idx, name, count in targets
         if name in phone_book
     ]
 
+    # if nobody to be messaged
     if not to_message:
         print("No target has a matching phone number. Update phoneBook and re-run.")
         return
 
+    # print out the number of times the people about to be messaged have been messaged
     print(f"About to message {len(to_message)} people:")
     for _, name, number, count in to_message:
         print(f"  - {name} -> {number} (notified {count} time(s) so far)")
 
+    # get active session from .db file
     client = NewClient(
         name="payments-reminder-bot",
         props=DeviceProps(os="XC Payments Bot", platformType=DeviceProps.DESKTOP),
     )
 
+    # connect and send all messaged
     @client.event(ConnectedEv)
     def on_connected(client: NewClient, event: ConnectedEv):
         print("\nConnected to WhatsApp. Sending reminders...")
