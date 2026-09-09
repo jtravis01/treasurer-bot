@@ -1,0 +1,13 @@
+{
+  "excelFile": "UoM XC Payments.xlsx",
+  "sheetName": "Test CC",
+  "nameColumnIndex": 0,
+  "paidColumnIndex": 1,
+  "notifiedColumnIndex": 2,
+  "maxNotifications": null,
+  "message": "Hi {name}, just a reminder that your Cocktail Crawl payment is still outstanding. The product expires tomorrow morning - please pay when you get a chance !",
+  "sendDelaySeconds": 5,
+  "phoneBook": {
+    "Jasper": "15188013188"
+  }
+}

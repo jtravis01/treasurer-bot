@@ -3,7 +3,9 @@
   "sheetName": "Cocktail Crawl",
   "nameColumnIndex": 0,
   "paidColumnIndex": 1,
-  "message": "Hi {name}, just a reminder that your Cocktail Crawl payment is still outstanding \u2014 please pay when you get a chance!",
+  "notifiedColumnIndex": 2,
+  "maxNotifications": 3,
+  "message": "Hi {name}, just a reminder that your Cocktail Crawl payment is still outstanding - please pay when you get a chance !",
   "sendDelaySeconds": 5,
   "phoneBook": {
     "AJ": "447365268027",
