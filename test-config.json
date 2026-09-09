@@ -1,6 +1,7 @@
 {
-  "excelFile": "UoM XC Payments.xlsx",
-  "sheetName": "Test CC",
+  "spreadsheetId": "13vryTDn4nEUtF4LcW-Y3L7u9_dp3mmPgnNSz7MoJWvQ",
+  "credentialsFile": "credentials.json",
+  "sheetName": "Cocktail Crawl",
   "nameColumnIndex": 0,
   "paidColumnIndex": 1,
   "notifiedColumnIndex": 2,

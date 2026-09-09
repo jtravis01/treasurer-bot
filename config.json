@@ -1,5 +1,6 @@
 {
-  "excelFile": "UoM_XC_Payments.xlsx",
+  "spreadsheetId": "13vryTDn4nEUtF4LcW-Y3L7u9_dp3mmPgnNSz7MoJWvQ",
+  "credentialsFile": "credentials.json",
   "sheetName": "Cocktail Crawl",
   "nameColumnIndex": 0,
   "paidColumnIndex": 1,
