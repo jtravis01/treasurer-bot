@@ -6,7 +6,7 @@
   "paidColumnIndex": 1,
   "notifiedColumnIndex": 2,
   "maxNotifications": null,
-  "message": "Hi {name}, just a reminder that your Cocktail Crawl payment is still outstanding. The product expires tomorrow morning - please pay when you get a chance !",
+  "message": "hi {name}, just a reminder that your Cocktail Crawl payment is still outstanding. the product expires tomorrow morning - please pay when you get a chance ! https://manchesterstudentsunion.com/shop?activity_id=565",
   "sendDelaySeconds": 5,
   "phoneBook": {
     "Jasper": "15188013188"

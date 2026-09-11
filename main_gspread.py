@@ -45,7 +45,7 @@ from neonize.events import ConnectedEv
 from neonize.proto.waCompanionReg.WAWebProtobufsCompanionReg_pb2 import DeviceProps
 from neonize.utils import build_jid
 
-CONFIG_PATH = "test-config.json"
+CONFIG_PATH = "config.json"
 
 
 def load_config(path: str = CONFIG_PATH) -> dict:
@@ -155,6 +155,7 @@ def main():
     print(f"About to message {len(to_message)} people:")
     for _, name, number, count in to_message:
         print(f"  - {name} -> {number} (notified {count} time(s) so far)")
+
 
     # get active session from .db file
     client = NewClient(
