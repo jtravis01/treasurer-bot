@@ -1,14 +1,18 @@
 {
   "spreadsheetId": "13vryTDn4nEUtF4LcW-Y3L7u9_dp3mmPgnNSz7MoJWvQ",
   "credentialsFile": "credentials.json",
-  "sheetName": "Test CC",
+  "sheetName": "Copy of Area League",
   "nameColumnIndex": 0,
   "paidColumnIndex": 1,
   "notifiedColumnIndex": 2,
   "maxNotifications": null,
-  "message": "hi {name}, just a reminder that your Cocktail Crawl payment is still outstanding. the product expires tomorrow morning - please pay when you get a chance ! https://manchesterstudentsunion.com/shop?activity_id=565",
+  "message": "hi {name}, just a reminder that your Area League payment is still outstanding. please pay when you get a chance ! https://manchesterstudentsunion.com/shop?activity_id=565",
   "sendDelaySeconds": 5,
   "phoneBook": {
     "Jasper": "15188013188"
+  },
+
+  "phoneBookLastNames": {
+    "Jasper Travis": "15188013188"
   }
 }
