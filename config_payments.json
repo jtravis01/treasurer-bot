@@ -7,14 +7,14 @@
    "sheets": [
     {"sheetName": "Area League", "nameColumnIndex": 0, "paidColumnIndex": 1,
      "notifiedColumnIndex": 2, "maxNotifications": 5,
-     "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !"},
+     "message": "hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !"},
     {"sheetName": "Training Weekend", "nameColumnIndex": 0, "paidColumnIndex": 2,
      "notifiedColumnIndex": 3, "maxNotifications": 5,
-     "message": "Hi {name}, your Training Weekend payment is still outstanding !",
+     "message": "hi {name}, your Training Weekend payment is still outstanding !",
      "followUp": "Training Weekend is no longer available on SUMS. please pay £22 to the club account: {clubAccount}"},
     {"sheetName": "Membership", "nameColumnIndex": 0, "paidColumnIndex": 1,
     "notifiedColumnIndex": 2, "maxNotifications": 5,
-    "message": "Hi {name}, your Membership is still outstanding !"}
+    "message": "hi {name}, your Membership is still outstanding !"}
   ],
   "sendDelaySeconds": 5,
   "phoneBook": {

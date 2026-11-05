@@ -10,7 +10,7 @@
         "row": 2,
         "name": "Alex Johnson",
         "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
         "followUp": null,
         "nameCol": 0,
         "paidCol": 1,
@@ -28,13 +28,14 @@
         "notifiedCol": 2
       }
     ],
-    "status": "pending",
-    "queuedAt": "2026-11-05T12:02:17"
+    "status": "sent",
+    "queuedAt": "2026-11-05T19:09:45",
+    "sentAt": "2026-11-05T19:10:42"
   },
   {
     "name": "Alexandria Moore",
     "number": "447946090222",
-    "text": "Hi Alexandria, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+    "text": "Hi Alexandria, your Area League payment is still outstanding. please pay as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\n thanks !",
     "followUps": [],
     "items": [
       {
@@ -42,20 +43,21 @@
         "row": 3,
         "name": "Alexandria Moore",
         "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
         "followUp": null,
         "nameCol": 0,
         "paidCol": 1,
         "notifiedCol": 2
       }
     ],
-    "status": "pending",
-    "queuedAt": "2026-11-05T12:02:17"
+    "status": "sent",
+    "queuedAt": "2026-11-05T19:09:45",
+    "sentAt": "2026-11-05T19:10:49"
   },
   {
     "name": "Isaac East",
     "number": "447847724753",
-    "text": "Hi Isaac, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+    "text": "Hi Isaac, your Area League payment is still outstanding. please pay as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\n thanks !",
     "followUps": [],
     "items": [
       {
@@ -63,15 +65,16 @@
         "row": 4,
         "name": "Isaac East",
         "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
         "followUp": null,
         "nameCol": 0,
         "paidCol": 1,
         "notifiedCol": 2
       }
     ],
-    "status": "pending",
-    "queuedAt": "2026-11-05T12:02:17"
+    "status": "sent",
+    "queuedAt": "2026-11-05T19:09:45",
+    "sentAt": "2026-11-05T19:10:55"
   },
   {
     "name": "Sophie Fines-Allin",
@@ -86,7 +89,7 @@
         "row": 5,
         "name": "Sophie Fines-Allin",
         "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
         "followUp": null,
         "nameCol": 0,
         "paidCol": 1,
@@ -115,7 +118,8 @@
         "notifiedCol": 2
       }
     ],
-    "status": "pending",
-    "queuedAt": "2026-11-05T12:02:17"
+    "status": "sent",
+    "queuedAt": "2026-11-05T19:09:45",
+    "sentAt": "2026-11-05T19:11:02"
   }
 ]
