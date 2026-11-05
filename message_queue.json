@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Alex Johnson",
+    "number": "447541459347",
+    "text": "hi Alex, you still owe payments for: Area League and Membership. please pay for these as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\nthanks !",
+    "followUps": [],
+    "items": [
+      {
+        "sheet": "Area League",
+        "row": 2,
+        "name": "Alex Johnson",
+        "label": "Area League",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      },
+      {
+        "sheet": "Membership",
+        "row": 2,
+        "name": "Alex Johnson",
+        "label": "Membership",
+        "message": "Hi {name}, your Membership is still outstanding !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      }
+    ],
+    "status": "pending",
+    "queuedAt": "2026-11-05T12:02:17"
+  },
+  {
+    "name": "Alexandria Moore",
+    "number": "447946090222",
+    "text": "Hi Alexandria, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+    "followUps": [],
+    "items": [
+      {
+        "sheet": "Area League",
+        "row": 3,
+        "name": "Alexandria Moore",
+        "label": "Area League",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      }
+    ],
+    "status": "pending",
+    "queuedAt": "2026-11-05T12:02:17"
+  },
+  {
+    "name": "Isaac East",
+    "number": "447847724753",
+    "text": "Hi Isaac, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+    "followUps": [],
+    "items": [
+      {
+        "sheet": "Area League",
+        "row": 4,
+        "name": "Isaac East",
+        "label": "Area League",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      }
+    ],
+    "status": "pending",
+    "queuedAt": "2026-11-05T12:02:17"
+  },
+  {
+    "name": "Sophie Fines-Allin",
+    "number": "447541329921",
+    "text": "hi Sophie, you still owe payments for: Area League, Training Weekend and Membership. please pay for these as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\nthanks !",
+    "followUps": [
+      "Training Weekend is no longer available on SUMS. please pay £22 to the club account: \nName: University of Manchester Students Union\nAccount Num: 10299375\nSort Code: 09-02-22\nReference: AU912"
+    ],
+    "items": [
+      {
+        "sheet": "Area League",
+        "row": 5,
+        "name": "Sophie Fines-Allin",
+        "label": "Area League",
+        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can. thanks !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      },
+      {
+        "sheet": "Training Weekend",
+        "row": 3,
+        "name": "Sophie",
+        "label": "Training Weekend",
+        "message": "Hi {name}, your Training Weekend payment is still outstanding !",
+        "followUp": "Training Weekend is no longer available on SUMS. please pay £22 to the club account: {clubAccount}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3
+      },
+      {
+        "sheet": "Membership",
+        "row": 3,
+        "name": "Sophie Fines-Allin",
+        "label": "Membership",
+        "message": "Hi {name}, your Membership is still outstanding !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      }
+    ],
+    "status": "pending",
+    "queuedAt": "2026-11-05T12:02:17"
+  }
+]
