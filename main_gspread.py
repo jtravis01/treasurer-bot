@@ -45,7 +45,7 @@ from neonize.events import ConnectedEv
 from neonize.proto.waCompanionReg.WAWebProtobufsCompanionReg_pb2 import DeviceProps
 from neonize.utils import build_jid
 
-CONFIG_PATH = "config.json"
+CONFIG_PATH = "old_config.json"
 
 
 def load_config(path: str = CONFIG_PATH) -> dict:
