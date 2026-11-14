@@ -126,8 +126,25 @@ Phone numbers use international format with **no `+` and no spaces**. Example (v
   }
 }
 ```
-
 Names in `phoneBook` need to match the names in the sheet exactly, otherwise a member can't be matched to a number.
+
+There is also an optional groupedMessage parameter, with an optional followUp parameter:
+
+```json
+{
+  "groupedMessage": "default message",
+    "sheets": [
+    {"sheetName": "X", "nameColumnIndex": 0, "paidColumnIndex": 1,
+     "notifiedColumnIndex": 2, "maxNotifications": 5,
+     "message": "hi {name}, your payment for X is still outstanding. please pay as soon as you can here: {link}\n thanks !"},
+    {"sheetName": "Y", "nameColumnIndex": 0, "paidColumnIndex": 2,
+     "notifiedColumnIndex": 3, "maxNotifications": 5,
+     "message": "hi {name}, your payment for Y is still outstanding !",
+     "followUp": "hi {name}, your payment for Y is still outstanding. please pay through"},
+}
+```
+This groups the messages together for people who haven't paid on multiple sheets.
+The followUp parameter sends a follow up message to keep messages concise.
 
 ---
 
