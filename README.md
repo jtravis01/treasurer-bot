@@ -52,22 +52,12 @@ The bot appears under Linked Devices as **"XC Payments Bot"** (`platformType=Dev
 
 ```
 treasurer-bot/
-├── treasurer_app/            # Web app version
-│   ├── server.py             # FastAPI backend
-│   ├── reminder_logic.py     # Shared reminder logic
-│   └── static/
-│       ├── index.html        # Mobile PWA frontend
-│       └── manifest.json     # PWA manifest
 ├── main_gspread.py           # Script version (Google Sheets)
 ├── main_local.py             # Script version (local .xlsx)
 ├── config_payments.json      # Bot configuration
 ├── credentials.json          # Google service account key (DO NOT COMMIT)
 └── session.db                # WhatsApp session (DO NOT COMMIT)
 ```
-
-> Adjust this tree to match your repo. File names are listed as they currently exist.
-
----
 
 ## Requirements
 
