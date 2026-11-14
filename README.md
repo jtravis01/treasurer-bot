@@ -2,7 +2,7 @@
 
 A Python tool that automates payment chasing for a university cross-country (XC) running club. It reads a Google Sheet, finds members who haven't paid, sends them a WhatsApp reminder through [`neonize`](https://github.com/krypton-byte/neonize), and increments a notification counter in the sheet so nobody gets reminded forever.
 
-It can be run as a plain script or as a small web app with a mobile-friendly PWA, so the treasurer can trigger reminders from a phone's home screen. It's designed to run on an always-on Raspberry Pi.
+Can be run as a plain script but can also be configured to run on an always-on raspberry pi
 
 ---
 
@@ -140,7 +140,7 @@ There is also an optional groupedMessage parameter, with an optional followUp pa
     {"sheetName": "Y", "nameColumnIndex": 0, "paidColumnIndex": 2,
      "notifiedColumnIndex": 3, "maxNotifications": 5,
      "message": "hi {name}, your payment for Y is still outstanding !",
-     "followUp": "hi {name}, your payment for Y is still outstanding. please pay through"},
+     "followUp": "hi {name}, your payment for Y is still outstanding, but is no longer avaliable online. please pay through an alternative method"},
 }
 ```
 This groups the messages together for people who haven't paid on multiple sheets.
@@ -149,15 +149,6 @@ The followUp parameter sends a follow up message to keep messages concise.
 ---
 
 ## Running
-
-**Web app (recommended):**
-
-```bash
-cd treasurer_app
-uvicorn server:app --host 0.0.0.0 --port 8000
-```
-
-Open `http://<host>:8000` on your phone and use "Add to Home Screen" to install the PWA.
 
 **Script only:**
 
