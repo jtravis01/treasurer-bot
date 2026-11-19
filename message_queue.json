@@ -1,125 +1,559 @@
 [
   {
-    "name": "Alex Johnson",
-    "number": "447541459347",
-    "text": "hi Alex, you still owe payments for: Area League and Membership. please pay for these as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\nthanks !",
-    "followUps": [],
-    "items": [
-      {
-        "sheet": "Area League",
-        "row": 2,
-        "name": "Alex Johnson",
-        "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
-        "followUp": null,
-        "nameCol": 0,
-        "paidCol": 1,
-        "notifiedCol": 2
-      },
-      {
-        "sheet": "Membership",
-        "row": 2,
-        "name": "Alex Johnson",
-        "label": "Membership",
-        "message": "Hi {name}, your Membership is still outstanding !",
-        "followUp": null,
-        "nameCol": 0,
-        "paidCol": 1,
-        "notifiedCol": 2
-      }
-    ],
-    "status": "sent",
-    "queuedAt": "2026-11-05T19:09:45",
-    "sentAt": "2026-11-05T19:10:42"
-  },
-  {
-    "name": "Alexandria Moore",
-    "number": "447946090222",
-    "text": "Hi Alexandria, your Area League payment is still outstanding. please pay as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\n thanks !",
-    "followUps": [],
-    "items": [
-      {
-        "sheet": "Area League",
-        "row": 3,
-        "name": "Alexandria Moore",
-        "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
-        "followUp": null,
-        "nameCol": 0,
-        "paidCol": 1,
-        "notifiedCol": 2
-      }
-    ],
-    "status": "sent",
-    "queuedAt": "2026-11-05T19:09:45",
-    "sentAt": "2026-11-05T19:10:49"
-  },
-  {
     "name": "Isaac East",
     "number": "447847724753",
-    "text": "Hi Isaac, your Area League payment is still outstanding. please pay as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\n thanks !",
-    "followUps": [],
+    "text": "hi Isaac, you still owe payments for: Area League and the Leeds ticket with social included (£15). please pay for these as soon as you can here. \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
     "items": [
       {
         "sheet": "Area League",
         "row": 4,
         "name": "Isaac East",
         "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
+        "message": "hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
         "followUp": null,
         "nameCol": 0,
         "paidCol": 1,
         "notifiedCol": 2
+      },
+      {
+        "sheet": "Leeds",
+        "row": 7,
+        "name": "Isaac East",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
       }
     ],
     "status": "sent",
-    "queuedAt": "2026-11-05T19:09:45",
-    "sentAt": "2026-11-05T19:10:55"
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:40:59"
+  },
+  {
+    "name": "Alexandria Moore",
+    "number": "447946090222",
+    "text": "hi Alexandria, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 2,
+        "name": "Alexandria Moore",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:08"
+  },
+  {
+    "name": "Dash",
+    "number": "447380190111",
+    "text": "hi Dash, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 3,
+        "name": "Dash",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:15"
+  },
+  {
+    "name": "Eddie Allen",
+    "number": "447944257881",
+    "text": "hi Eddie, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 4,
+        "name": "Eddie Allen",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:22"
+  },
+  {
+    "name": "Erin Doyle",
+    "number": "447535924998",
+    "text": "hi Erin, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 5,
+        "name": "Erin Doyle",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:29"
+  },
+  {
+    "name": "George Hopkins",
+    "number": "447848959980",
+    "text": "hi George, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 6,
+        "name": "George Hopkins",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:36"
+  },
+  {
+    "name": "Kimberly Phillips",
+    "number": "447889536179",
+    "text": "hi Kimberly, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 8,
+        "name": "Kimberly Phillips",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:43"
+  },
+  {
+    "name": "Libby Turton",
+    "number": "447485160430",
+    "text": "hi Libby, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 9,
+        "name": "Libby Turton",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:50"
+  },
+  {
+    "name": "Liv Jones",
+    "number": "447407274499",
+    "text": "hi Liv, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 10,
+        "name": "Liv Jones",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:41:57"
+  },
+  {
+    "name": "Lucie Kealey",
+    "number": "447990307181",
+    "text": "hi Lucie, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 11,
+        "name": "Lucie Kealey",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:04"
+  },
+  {
+    "name": "Nell Ludewick",
+    "number": "447378835688",
+    "text": "hi Nell, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 12,
+        "name": "Nell Ludewick",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:10"
+  },
+  {
+    "name": "Paddy Cooper",
+    "number": "447533949584",
+    "text": "hi Paddy, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 13,
+        "name": "Paddy Cooper",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:17"
+  },
+  {
+    "name": "Scarlett Miller",
+    "number": "447534456784",
+    "text": "hi Scarlett, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 14,
+        "name": "Scarlett Miller",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:25"
   },
   {
     "name": "Sophie Fines-Allin",
     "number": "447541329921",
-    "text": "hi Sophie, you still owe payments for: Area League, Training Weekend and Membership. please pay for these as soon as you can here: https://manchesterstudentsunion.com/shop?activity_id=565\nthanks !",
+    "text": "hi Sophie, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
     "followUps": [
-      "Training Weekend is no longer available on SUMS. please pay £22 to the club account: \nName: University of Manchester Students Union\nAccount Num: 10299375\nSort Code: 09-02-22\nReference: AU912"
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
     ],
     "items": [
       {
-        "sheet": "Area League",
-        "row": 5,
+        "sheet": "Leeds",
+        "row": 15,
         "name": "Sophie Fines-Allin",
-        "label": "Area League",
-        "message": "Hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
-        "followUp": null,
-        "nameCol": 0,
-        "paidCol": 1,
-        "notifiedCol": 2
-      },
-      {
-        "sheet": "Training Weekend",
-        "row": 3,
-        "name": "Sophie",
-        "label": "Training Weekend",
-        "message": "Hi {name}, your Training Weekend payment is still outstanding !",
-        "followUp": "Training Weekend is no longer available on SUMS. please pay £22 to the club account: {clubAccount}",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
         "nameCol": 0,
         "paidCol": 2,
-        "notifiedCol": 3
-      },
-      {
-        "sheet": "Membership",
-        "row": 3,
-        "name": "Sophie Fines-Allin",
-        "label": "Membership",
-        "message": "Hi {name}, your Membership is still outstanding !",
-        "followUp": null,
-        "nameCol": 0,
-        "paidCol": 1,
-        "notifiedCol": 2
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
       }
     ],
     "status": "sent",
-    "queuedAt": "2026-11-05T19:09:45",
-    "sentAt": "2026-11-05T19:11:02"
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:32"
+  },
+  {
+    "name": "Tess Eastaugh",
+    "number": "447557043611",
+    "text": "hi Tess, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 16,
+        "name": "Tess Eastaugh",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:39"
+  },
+  {
+    "name": "Thomas James",
+    "number": "447498727117",
+    "text": "hi Thomas, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 17,
+        "name": "Thomas James",
+        "label": "the Leeds ticket with social included (£15)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket with the social included is available here for £15 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "YES",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:46"
+  },
+  {
+    "name": "Archie Bradbury",
+    "number": "447826275578",
+    "text": "hi Archie, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 18,
+        "name": "Archie Bradbury",
+        "label": "the Leeds ticket without social (£5)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "NO",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:42:53"
+  },
+  {
+    "name": "George Chamberlain",
+    "number": "447462657097",
+    "text": "hi George, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 19,
+        "name": "George Chamberlain",
+        "label": "the Leeds ticket without social (£5)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "NO",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:43:00"
+  },
+  {
+    "name": "Keir McCulloch",
+    "number": "447879906661",
+    "text": "hi Keir, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 20,
+        "name": "Keir McCulloch",
+        "label": "the Leeds ticket without social (£5)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "NO",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:43:07"
+  },
+  {
+    "name": "Matt Diacon",
+    "number": "447402143576",
+    "text": "hi Matt, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 21,
+        "name": "Matt Diacon",
+        "label": "the Leeds ticket without social (£5)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "NO",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:43:14"
+  },
+  {
+    "name": "Otto Wightman",
+    "number": "447873881844",
+    "text": "hi Otto, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Leeds",
+        "row": 22,
+        "name": "Otto Wightman",
+        "label": "the Leeds ticket without social (£5)",
+        "message": "hi {name}, please buy your Leeds ticket on SUMS. the ticket without the social is available here for £5 \nthanks !",
+        "followUp": "{sumsLink}",
+        "nameCol": 0,
+        "paidCol": 2,
+        "notifiedCol": 3,
+        "messageValue": "NO",
+        "messageValueCol": 1
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T20:40:02",
+    "sentAt": "2026-11-18T20:43:21"
   }
 ]

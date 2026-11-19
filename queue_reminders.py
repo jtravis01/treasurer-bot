@@ -53,7 +53,7 @@ from neonize.events import ConnectedEv
 from neonize.proto.waCompanionReg.WAWebProtobufsCompanionReg_pb2 import DeviceProps
 from neonize.utils import build_jid
 
-CONFIG_PATH = "config_payments.json"
+CONFIG_PATH = "new_config_payments.json"
 QUEUE_PATH = "message_queue.json"
 DEFAULT_GROUPED = "Hi {name}, you still have outstanding payments for: {items}."
 
@@ -107,7 +107,7 @@ def join_labels(labels):
 
 # Config keys that message templates may use as {placeholders}. Add a key here to
 # make it available; templates that don't mention it are unaffected.
-MESSAGE_VARIABLES = ("clubAccount", "sumsLink")
+MESSAGE_VARIABLES = ("clubAccount", "sumsLink", "leedsSocialTicketLink", "leedsNoSocialTicketLink")
 
 
 def message_variables(config):
@@ -135,8 +135,41 @@ def compose(name, items, grouped_template, variables):
     first = name.split()[0]
     if len(items) == 1:
         return fill(items[0]["message"], name=first, **variables)
+    labels = [fill(i["label"], name=first, **variables) for i in items]
     return fill(grouped_template, name=first,
-                items=join_labels([i["label"] for i in items]), **variables)
+                items=join_labels(labels), **variables)
+
+
+def message_for_row(sheet_config, row):
+    """Resolve a sheet's message/label templates, including row-dependent variants."""
+    message_by_value = sheet_config.get("messageByValue")
+    label_by_value = sheet_config.get("labelByValue", {})
+    if message_by_value is None:
+        return sheet_config["message"], sheet_config.get("label", sheet_config["sheetName"]), None
+
+    value_column = sheet_config["messageValueColumnIndex"]
+    value = str(cell(row, value_column)).strip().upper()
+    if value not in message_by_value:
+        raise ValueError(
+            f"Unexpected value {cell(row, value_column)!r} in column "
+            f"{value_column + 1} of {sheet_config['sheetName']}; "
+            f"expected one of: {', '.join(message_by_value)}"
+        )
+    message = message_by_value[value]
+    label = label_by_value.get(value, sheet_config.get("label", sheet_config["sheetName"]))
+    return message, label, value
+
+
+def refresh_item_message(item, sheet_config, row):
+    """Refresh a row-dependent message if its choice column changed since queueing."""
+    if "messageByValue" not in sheet_config:
+        return False
+    message, label, value = message_for_row(sheet_config, row)
+    changed = value != item.get("messageValue")
+    item["message"] = message
+    item["label"] = label
+    item["messageValue"] = value
+    return changed
 
 
 def compose_followups(name, items, variables):
@@ -258,17 +291,22 @@ def build(config):
 
             number = phone_book[name]
             person = people.setdefault(number, {"name": name, "items": []})
-            person["items"].append({
+            message, label, message_value = message_for_row(s, row)
+            item = {
                 "sheet": s["sheetName"],
                 "row": row_idx,
                 "name": name,  # as written in THIS sheet, used to verify the row later
-                "label": s.get("label", s["sheetName"]),
-                "message": s["message"],
+                "label": label,
+                "message": message,
                 "followUp": s.get("followUp"),
                 "nameCol": s["nameColumnIndex"],
                 "paidCol": s["paidColumnIndex"],
                 "notifiedCol": s.get("notifiedColumnIndex"),
-            })
+            }
+            if message_value is not None:
+                item["messageValue"] = message_value
+                item["messageValueCol"] = s["messageValueColumnIndex"]
+            person["items"].append(item)
 
     added, merged, stale = merge_people_into_queue(queue, people, grouped_template, variables)
 
@@ -327,15 +365,23 @@ def send(config):
                     elif is_paid(cell(row, item["paidCol"])):
                         print(f"  note: {e['name']} has paid for {item['sheet']} since queueing")
                     else:
+                        sheet_config = next(
+                            s for s in config["sheets"] if s["sheetName"] == item["sheet"]
+                        )
+                        if refresh_item_message(item, sheet_config, row):
+                            item["messageConfigChanged"] = True
                         live.append((item, row))
 
+                message_config_changed = any([
+                    item.pop("messageConfigChanged", False) for item, _ in live
+                ])
                 if not live:
                     e["status"] = "skipped_nothing_due"
                     print(f"  SKIPPED {e['name']}: nothing left to chase")
                 else:
                     text = e["text"]
                     follow_ups = e.get("followUps", [])
-                    if len(live) != len(e["items"]):
+                    if len(live) != len(e["items"]) or message_config_changed:
                         # The queued wording no longer matches what they owe, so rewrite it.
                         # (This replaces any hand edits made to this entry's text/follow-ups.)
                         live_items = [i for i, _ in live]
