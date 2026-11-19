@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Matt Diacon",
+    "number": "447402143576",
+    "text": "hi Matt !",
+    "followUps": [
+      "https://manchesterstudentsunion.com/shop?activity_id=565"
+    ],
+    "items": [
+      {
+        "sheet": "Area League",
+        "row": 3,
+        "name": "Alexandria Moore",
+        "label": "Area League",
+        "message": "hi {name}, your Area League payment is still outstanding. please pay as soon as you can here: {sumsLink}\n thanks !",
+        "followUp": null,
+        "nameCol": 0,
+        "paidCol": 1,
+        "notifiedCol": 2
+      }
+    ],
+    "status": "sent",
+    "queuedAt": "2026-11-18T19:35:25",
+    "sentAt": "2026-11-18T19:48:46"
+  }
+]
